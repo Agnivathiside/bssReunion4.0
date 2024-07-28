@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REUNIONnew</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .custom-svg {
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+
+      .nav-pills .nav-link.active,
+      .nav-pills .nav-link:hover {
+        background-color: #343a40;
+        color: #fff;
+      }
+
+      .nav-pills .nav-item {
+        margin-right: 10px;
+      }
+
+      header {
+        margin-bottom: 0;
+      }
+
+      .hero-section {
+        margin-top: 0;
+        padding-top: 0;
+        position: relative;
+      }
+
+      .left-img,
+      .right-img {
+        width: 120px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      @media (min-width: 992px) {
+        .left-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(0, 0);
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+
+        .right-img {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          transform: translate(0, 0);
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+      }
+      .custom-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8); /* Adjust the blur (second and third values) */
+        }
+        .hero-section {
+      background: linear-gradient(45deg, #3b4444,#202428,black);
+    }
+    
+      
+  </style>
+    
+  </head>
+  <body>
+    <!--Header-->
+  <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-backpack-fill" viewBox="0 0 16 16">
+        <path d="M5 13v-3h4v.5a.5.5 0 0 0 1 0V10h1v3z" />
+        <path d="M6 2v.341C3.67 3.165 2 5.388 2 8v5.5A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5V8a6 6 0 0 0-4-5.659V2a2 2 0 1 0-4 0m2-1a1 1 0 0 1 1 1v.083a6 6 0 0 0-2 0V2a1 1 0 0 1 1-1m0 3a4 4 0 0 1 3.96 3.43.5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14A4 4 0 0 1 8 4M4.5 9h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5" />
+      </svg>
+      <span class="fs-4">THE BSS SCHOOL ALUMNI ASSOCIATION</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link active ml-8">About</a>
+      </li>
+    </ul>
+  </header>
+  <!-- HERO section -->
+<div class="text-secondary px-4 py-5 text-center hero-section">
+  <img src="./shooting-stars.png" class="img-fluid left-img" alt="Left Image" />
+  <img src="./rotated-star.png" class="img-fluid right-img" alt="Right Image" />
+  <div class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-white">Nostalgia Returns</h1>
+          <p class="fs-5 mb-4">
+            The BSS School Alumni Association presents MILAN - Welcome to our long-awaited reunion! It's a joy to see familiar faces and reconnect after so much time. Today, we celebrate cherished memories, rekindle old friendships, and create new ones. Let's share stories, laughter, and perhaps a few tears, as we reminisce about the past and look forward to the future. Here's to the bonds that have stood the test of time and the wonderful moments ahead. Enjoy every minute of this special gathering!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-info btn-lg px-6 me-sm-3 fw-bold">
+              Scroll below to know more!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <!--Second section i.e ALumni Login-->
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Alumni Login</h1>
+          <p class="lead">The Alumni Association invites former students to join by paying a one-time fee of Rs. 1000, granting lifetime membership benefits. Upon registration, members are eligible to participate in the event 'Milan'</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button" class="btn btn-dark btn-lg px-4 ">Join Alumni Association</button>
+            <button type="button" class="btn btn-dark btn-lg px-4" onclick="window.location.href='/ex-student'">Sign up for Milan</button>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden custom-shadow">
+            <img class="rounded-lg-3" src="./the-bss-schoolpic3.jpg" alt="" width="720">
+        </div>
+      </div>
+   <!-- Third section i.e Organiser Login -->
+<!-- Third section i.e Organiser Login -->
+<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg bg-dark">
+  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+    <h1 class="display-4 fw-bold lh-1 text-body-emphasis" style="color: #fefffc !important;">Organiser Login</h1>
+    <p class="lead text-white">Organizers are kindly requested to enter the 5-digit passkey provided to them as the password.</p>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+      <form>
+        <img class="mb-4" src="./login-icon.png" alt="" width="72" height="65">
+        <h1 class="h3 mb-3 fw-normal" style="color: #0dcaf0;">Please sign in</h1>
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="rsmxtd">
+          <label for="floatingInput" style="color: #0dcaf0;">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="id280c">
+          <label for="floatingPassword" style="color: #0dcaf0;">Password</label>
+        </div>
+
+        <div class="form-check text-start my-3">
+          <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault" style="color: #0dcaf0;">
+            Remember me
+          </label>
+        </div>
+        <button class="btn btn-outline-info btn-lg px-6 me-sm-3 fw-bold" type="submit" fdprocessedid="gdtrek">Sign in</button>
+        
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden custom-shadow">
+    <img class="rounded-lg-3" src="./hacker-1.jpg" alt="" width="720">
+  </div>
+</div>
+
+ <!--Contact Us Section-->
+ <div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3 text-center">
+      <a href="/" class="d-flex justify-content-center align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img src="./the-bss-school-logo.png" alt="The BSS School Logo">
+      </a>
+      <p class="text-body-secondary">© 2024</p>
+    </div>
+    
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>CONTACT US</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Anjali Lalwani:9433637741</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Anisha Lalwani:9433627741</a></li>
+        <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> -->
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>DISCLAIMER</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The website is currently under construction and may exhibit occasional issues. If you encounter any problems, please do not hesitate to contact us via WhatsApp or voice call.</a></li>
+        
+      </ul>
+    </div>
+  </footer>
+</div>
+
+      
+
+     
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnmiKpxfugodUGpYp5KZu7yl5ozXh8cDo&callback=initMap"
+      async
+      defer
+    ></script>
+    <script>
+      function initMap() {
+        const myLatLng = { lat: 22.524, lng: 88.3652 }; // Replace with your desired location's coordinates
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: myLatLng,
+        });
+        new google.maps.Marker({
+          position: myLatLng,
+          map,
+          title: "Your Location",
+        });
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

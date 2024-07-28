@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSReunion</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/kGufzmR.png">
+    <style>
+      
+      .custom-logo {
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 70px;
+        height: auto;
+        max-width: 100%;
+    }
+      .header {
+    background-color: #36454F;
+    color: white;
+    position: relative; /* Ensure relative positioning for child elements */
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 0; /* Removed unnecessary margin-bottom */
+  }
+
+      .hero-section {
+        margin-top: 0;
+        padding-top: 0;
+        position: relative;
+        background-image: url('https://i.imgur.com/AKdewIg.png'); /* Replace 'ink.jpg' with the path to your image */
+        background-size: cover; /* Makes sure the image covers the entire header */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+       
+      }
+      
+        .custom-header{
+          background-color:#36454F;
+          font-family: 'Georgia', serif;
+          background-image: url('https://i.imgur.com/L0U1nxr.png'); /* Replace 'ink.jpg' with the path to your image */
+          background-size: cover; /* Makes sure the image covers the entire header */
+          background-position: center; /* Centers the image */
+          background-repeat: no-repeat; /* Prevents the image from repeating */
+          position: relative;
+          
+          @media (max-width: 767px) {
+          header {
+            background-size: contain; /* Scales the image to fit within the header */
+            background-position: top; /* Adjusts the position to align better */
+            padding: 10px 10px; /* Adjust padding for smaller screens if needed */
+          }
+          }
+          
+          }
+        .custom-btn-color {  /*buttons on page*/
+        background-color: #36454F;
+        border-color: #36454F;
+        color: white;
+        font-family: 'Georgia', serif;
+      }
+
+      .custom-btn-color:hover {
+        background-color: #36454F;
+        border-color: #36454F;
+        color: white;  
+        font-family: 'Georgia', serif;              
+      }
+      .fs-4{
+         margin-left: 20px; 
+        color:#E0E0E0;
+        font-size: 2.5rem!important; 
+        display: block!important;
+        width: 100%!important; 
+      }
+     
+      .organiser-login-bg{
+        background-image: url('https://i.imgur.com/AKdewIg.png'); 
+          background-size: cover; 
+          background-position: center; 
+          background-repeat: no-repeat; 
+        
+      }
+      .milan-section{
+          /* background-image: url('milan-section.png'); 
+          background-size: cover; 
+          background-position: center; 
+          background-repeat: no-repeat; */
+          background-color: #36454F;
+
+      }
+      
+
+      .bottom-box {
+      background-color: #96765A;
+      width: 100%;
+      height: 10px; 
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1; 
+    }
+      
+      .heading{
+        font-family: 'Georgia', serif;
+        color:#36454F;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .text-body{
+        font-family: 'Georgia', serif;
+        color:#36454F;
+        font-size: 20px;
+      }
+      .text-start{
+        font-family: 'Georgia', serif;
+        color:#36454F;
+      }
+      .vertical-line {
+        border-left: 2px solid black;
+        height: 100%;
+      }
+      .custom-list {
+    list-style-type: square;
+    padding-left: 20px; 
+    }
+    .custom-list li {
+        color: #36454F; 
+        font-family: 'Georgia', serif; 
+        margin-bottom: 30px; 
+    }
+    .custom-list-2 {
+    list-style-type: none;
+    padding-left: 20px; 
+    }
+    .custom-list-2 li {
+        color: #36454F; 
+        font-family: 'Georgia', serif; 
+        margin-bottom: 30px; 
+    }
+    .first-part{
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+    .second-part{
+      font-family: Georgia, serif;
+      font-size: 16px;
+    }
+    @media (max-width: 576px) {
+      .custom-logo {
+        width: 50px; /* Adjusted the size of the logo */
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+
+      .fs-4 {
+        font-size: 1.5rem !important; /* Adjusted the font size of the header text */
+        margin-left: 10px;
+      }
+
+      header {
+        padding: 5px 10px; /* Adjusted the padding of the header */
+      }
+
+      .bottom-box {
+        height: 5px; /* Adjusted the height of the bottom box */
+      }
+    }
+
+    @media (max-width: 485px) {
+      .custom-logo {
+        width: 40px; /* Further adjusted the size of the logo */
+        margin-left: 5px;
+        margin-right: 2px;
+      }
+
+      .fs-4 {
+        font-size: 1.2rem !important; /* Further adjusted the font size of the header text */
+        margin-left: 5px;
+      }
+
+      header {
+        padding: 3px 5px; /* Further adjusted the padding of the header */
+      }
+
+      .bottom-box {
+        height: 3px; /* Further adjusted the height of the bottom box */
+      }
+    }
+    @media (max-width: 790px) and (min-width: 576px) {
+        .custom-logo {
+          width: 60px; /* Adjust the size of the logo */
+          margin-left: 15px;
+          margin-right: 8px;
+        }
+        .fs-4 {
+          font-size: 1.7rem !important; /* Adjust the font size of the header text */
+          margin-left: 15px;
+        }
+        header {
+          padding: 8px 15px; /* Adjust the padding of the header */
+        }
+        .bottom-box {
+          height: 8px; /* Adjust the height of the bottom box */
+        }
+      }
+  </style>
+    </style>
+  </head>
+    <!--Section 1 header-->
+    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom custom-header">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="https://i.imgur.com/XDceDGF.png" class="custom-logo" style="z-index: 1;">
+        <span class="fs-4" style="z-index: 2">The ASS School Alumni Association</span>
+      </a>
+      <div class="bottom-box"></div>
+    </header>
+
+
+    <!--hero-->
+    <div class="bg-dark text-secondary px-4 py-5 text-center hero-section"> <!--Bg color of hero sections-->
+      <p class="first-part"><b>Congratulations! You are now a registered member of the ASS School Alumni Association. We are thrilled to welcome you to our community.</b></p>
+      <br>
+      <br>
+      <br>
+      
+      <p class="second-part">If you have any questions or need further assistance, please don't hesitate to contact us. We look forward to reconnecting with you and creating new memories together.</p>
+      <p>You will be redirected to the home page in <span id="countdown">20</span> seconds.</p>
+      
+      </div>
+      <!-- Footer -->
+<div class="footer">
+  <!--insert main footer here-->
+  <div class="row" style="background-color:white; padding: 20px;">
+    <!-- Left Grid with Icon -->
+    <div class="col-md-4 text-center">
+      <img src="https://i.imgur.com/XDceDGF.png" style="height: 100px; width: 100px;">
+      <br><br>
+      <p style="font-size: 0.9rem;">© 2024 THE ASS SCHOOL ALUMNI ASSOCIATION</p>
+    </div>
+    
+    <!-- Middle Grid with Text -->
+    <div class="col-md-4 text-center">
+      <p class="text-body-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+          <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+        </svg> 51, Gariahat Road, beside Allahabad Bank, Dover Terrace, Ballygunge, Kolkata, West Bengal 700019
+      </p>
+      <p class="text-body-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg> 8981958483
+      </p>
+      <p class="text-body-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+        </svg> alumni.ASS@gmail.com
+      </p>
+      <div class="d-flex justify-content-center">
+        <div class="icon mx-2">
+          <a href="https://www.instagram.com/alumniASS" style="color: rgb(232, 57, 86);"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+          </svg></a>
+        </div>
+        <div class="icon mx-2">
+          <a href="https://www.facebook.com/ASSalumni?mibextid=LQQJ4d"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Grid with Form -->
+    <div class="col-md-4 text-center">
+      <form>
+        <label for="newsletter" class="form-label"><u>Subscribe to our newsletter</u></label>
+        <p>Monthly digest of what's new and exciting from us.</p>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" id="newsletter" placeholder="Email address" aria-label="Email address" aria-describedby="button-subscribe">
+          <button class="btn btn-primary" type="button" id="button-subscribe">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="row" style="background-color:white">
+    <div class="col text-center">
+      <p class="text-body-secondary">Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="darkred" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386"/>
+      </svg> by <a href="https://www.instagram.com/such.is.me" class="text-decoration-none" style="color:  darkred;">Suchismita Singha Roy</a> and <a href="https://www.instagram.com/im_agniva_007" class="text-decoration-none" style="color: darkred;">Agniva Bhattacharjee</a></p>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  // Countdown logic
+  var countdownElement = document.getElementById('countdown');
+  var secondsRemaining = 20;
+
+  function updateCountdown() {
+      secondsRemaining--;
+      countdownElement.textContent = secondsRemaining;
+
+      if (secondsRemaining <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = "/";
+      }
+  }
+
+  var countdownInterval = setInterval(updateCountdown, 1000); // Update every second
+</script>
+</body>
+    
+</html>
